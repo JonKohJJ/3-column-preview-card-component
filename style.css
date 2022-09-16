@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--color-light-grey);
+    text-transform: uppercase;
+    margin: 20px 0;
+    font-size: var(--fs-h1);
+    letter-spacing: 1px;
+}
+p{
+    color: var(--color-paragraph);
+    line-height: 2;
+    font-size: var(--fs-paragraph);
+}
+
+
+:root{
+    --color-orange: hsl(26, 94%, 47%);
+    --color-cyan: hsl(184, 100%, 22%);
+    --color-dark-cyan: hsl(179, 100%, 13%);
+    --color-paragraph: hsla(0, 0%, 100%, 0.75);
+    --color-light-grey: hsl(0, 0%, 95%);
+
+    --fs-h1: 2.5rem;
+    --fs-paragraph: 1.05rem;
+}
+
+
+
+.body-wrapper{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    max-width: 340px;
+    margin: 50px 0;
+}
+
+.learn-more{
+    background-color: var(--color-light-grey);
+    border-radius: 40px;
+    width: 55%;
+    padding: 10px;
+    text-align: center;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.learn-more:hover{
+    background-color: transparent;
+    color: var(--color-paragraph) !important;
+    outline: 2px solid var(--color-paragraph);
+}
+
+
+.car-cat{
+    padding: 50px 40px;
+}
+.sedans{
+    background-color: var(--color-orange);
+}
+.sedans .learn-more{
+    color: var(--color-orange);
+}
+.car-cat:first-of-type{
+    border-radius: 10px 10px 0 0;
+}
+.suvs{
+    background-color: var(--color-cyan);
+}
+.suvs .learn-more{
+    color: var(--color-cyan);
+}
+.luxury{
+    background-color: var(--color-dark-cyan);
+}
+.luxury .learn-more{
+    color: var(--color-dark-cyan);
+}
+.car-cat:last-of-type{
+    border-radius: 0 0 10px 10px;
+}
+
+
+@media screen and (min-width: 1024px){
+
+    html, body{
+        height: 100%;
+    }
+
+    h1{
+        margin: 25px 0;
+    }
+
+    :root{
+        --fs-h1: 2.85rem;
+        --fs-paragraph: 1.2rem;
+    }
+
+    .container{
+        display: flex;
+        max-width: 1024px;
+        margin: 0;
+    }
+
+    .car-cat {
+        padding: 35px 45px;
+    }
+    .car-cat:first-of-type{
+        border-radius: 10px 0 0 10px;
+    }
+    .car-cat:last-of-type{
+        border-radius: 0 10px 10px 0;
+    }
+
+    .learn-more{
+        width: 70%;
+        margin: 100px 0 15px 0;
+    }
+}
