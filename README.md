@@ -11,7 +11,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here]()
+- Live Site URL: [https://jonkohjj.github.io/3-column-preview-card-component/](https://jonkohjj.github.io/3-column-preview-card-component/)
 
 ### Built with
 
